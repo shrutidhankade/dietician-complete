@@ -28,7 +28,7 @@ const Admin = () => {
 
         { name: "signup", link: "/Signup", icon: AiOutlineUser },
         { name: "signin", link: "/signin", icon: RiUserSmileFill  },
-        { name: "reset password", link: "/", icon: MdOutlineLockReset },
+        { name: "reset password", link: "/ResetPassword", icon: MdOutlineLockReset },
         { name: "Logout", link: "/", icon: BiLogOutCircle , },
 
 
@@ -36,13 +36,13 @@ const Admin = () => {
 
     ];
 
-    const logoutHandler = () => {
-        console.log("click");
-        dispatch(asyncremoveuser());
-        navigate("/Home")
+    // const logoutHandler = () => {
+    //     console.log("click");
+    //     dispatch(asyncremoveuser());
+    //     navigate("/Home")
 
 
-    }
+    // }
     const [open, setOpen] = useState(false);
     return (
         <>

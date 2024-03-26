@@ -2,10 +2,7 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom';
 import { asyncverifymail } from '../store/Actions/userAction';
-
-
-
-
+// import { asyncverifymail } from '../../store/Actions/userActions';
 
 const VerifyPassword = () => {
     const { id } = useParams();
@@ -48,13 +45,6 @@ const VerifyPassword = () => {
                         onChange={handleChange}
                         placeholder='john@example.com'
                         className='w-[91%] p-2 ml-[5%]  border-2 mb-6  rounded-[5px] ' />
-
-
-
-
-
-
-
 
                     <button type='submit' className='bg-[#00A5EC] p-2 w-[91%] ml-[5%] text-white rounded-[5px] ' >send</button>
 
